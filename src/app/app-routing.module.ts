@@ -2,8 +2,19 @@ import { NgModule } from '@angular/core'
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router'
 
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', loadChildren: './home/home.module#HomePageModule' }
+    {
+        path: '',
+        redirectTo: 'discover',
+        pathMatch: 'full'
+    },
+    {
+        path: 'discover',
+        loadChildren: './discover/discover.module#DiscoverPageModule'
+    },
+    {
+        path: 'match',
+        loadChildren: './match/match.module#MatchPageModule'
+    }
 ]
 
 @NgModule({
