@@ -14,6 +14,14 @@ const routes: Routes = [
     {
         path: 'match',
         loadChildren: './match/match.module#MatchPageModule'
+    },
+    {
+        path: 'create',
+        loadChildren: './create/create.module#CreatePageModule'
+    },
+    {
+        path: 'profile',
+        loadChildren: './profile/profile.module#ProfilePageModule'
     }
 ]
 
