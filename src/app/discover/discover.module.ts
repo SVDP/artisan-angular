@@ -1,26 +1,14 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms'
-import { Routes, RouterModule } from '@angular/router'
 
 import { IonicModule } from '@ionic/angular'
 
 import { DiscoverPage } from './discover.page'
-
-const routes: Routes = [
-    {
-        path: '',
-        component: DiscoverPage
-    }
-]
+import { DiscoverRoutingModule } from './discover-routing.module'
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        IonicModule,
-        RouterModule.forChild(routes)
-    ],
+    imports: [CommonModule, FormsModule, IonicModule, DiscoverRoutingModule],
     declarations: [DiscoverPage]
 })
 export class DiscoverPageModule {}

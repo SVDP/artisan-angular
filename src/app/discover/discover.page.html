@@ -7,10 +7,18 @@
                 </ion-button>
             </ion-menu-toggle>
         </ion-buttons>
-        <ion-title>Header</ion-title>
+        <ion-title>Discover</ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content padding>
-    <h1>Discover</h1>
-    <p>Click the icon in the top left to toggle the menu.</p>
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="shots">
+                <ion-label>Shots</ion-label>
+            </ion-tab-button>
+            <ion-tab-button tab="creatives">
+                <ion-label>Creatives</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
 </ion-content>
