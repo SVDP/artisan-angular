@@ -11,7 +11,24 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-    <h1>Shots</h1>
-    <p>Click the icon in the top left to toggle the menu.</p>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-list>
+                    <ion-item *ngFor="let shot of loadedShots">
+                        <ion-card>
+                            <ion-img [src]="shot.shotUrl"></ion-img>
+                            <ion-card-header>
+                                <ion-card-title>{{ shot.name }}</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <p>{{ shot.tags }}</p>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

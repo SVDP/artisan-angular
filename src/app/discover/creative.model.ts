@@ -5,6 +5,6 @@ export class Creative {
         public description: string,
         public fields: string,
         public profileUrl: string,
-        public projects: string
+        public projectIds: string
     ) {}
 }
