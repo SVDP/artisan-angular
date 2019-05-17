@@ -25,7 +25,7 @@
                             <ion-card-content>
                                 <p>{{ shot.tags }}</p>
                             </ion-card-content>
-                            <ion-button (click)="onShowModal()">
+                            <ion-button [routerLink]="['/', 'discover', 'tabs', 'shots', shot.id]">
                                 View
                             </ion-button>
                         </ion-card>

@@ -1,21 +1,21 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { ShotModalComponent } from './shot-modal.component'
+import { ShotDetailPage } from './shot-detail.page'
 
-describe('ShotModalComponent', () => {
-    let component: ShotModalComponent
-    let fixture: ComponentFixture<ShotModalComponent>
+describe('ShotDetailPage', () => {
+    let component: ShotDetailPage
+    let fixture: ComponentFixture<ShotDetailPage>
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [ShotModalComponent],
+            declarations: [ShotDetailPage],
             schemas: [CUSTOM_ELEMENTS_SCHEMA]
         }).compileComponents()
     }))
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(ShotModalComponent)
+        fixture = TestBed.createComponent(ShotDetailPage)
         component = fixture.componentInstance
         fixture.detectChanges()
     })

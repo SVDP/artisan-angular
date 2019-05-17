@@ -14,6 +14,10 @@ const routes: Routes = [
                     {
                         path: '',
                         loadChildren: './shots/shots.module#ShotsPageModule'
+                    },
+                    {
+                        path: ':shotId',
+                        loadChildren: './shots/shot-detail/shot-detail.module#ShotDetailPageModule'
                     }
                 ]
             },
@@ -46,6 +50,10 @@ const routes: Routes = [
     {
         path: 'creative-detail',
         loadChildren: './creatives/creative-detail/creative-detail.module#CreativeDetailPageModule'
+    },
+    {
+        path: 'shot-detail',
+        loadChildren: './shots/shot-detail/shot-detail.module#ShotDetailPageModule'
     }
 ]
 
