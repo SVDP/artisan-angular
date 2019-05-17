@@ -34,4 +34,8 @@ export class CreativesService {
     }
 
     constructor() {}
+
+    getCreative(id: string) {
+        return { ...this._creatives.find(c => c.id === id) }
+    }
 }

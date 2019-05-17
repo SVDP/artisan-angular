@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core'
+import { ActivatedRoute } from '@angular/router'
+import { NavController } from '@ionic/angular'
+
+import { Creative } from '../../creative.model'
+import { CreativesService } from '../../creatives.service'
 
 @Component({
     selector: 'app-creative-detail',
@@ -6,7 +11,21 @@ import { Component, OnInit } from '@angular/core'
     styleUrls: ['./creative-detail.page.scss']
 })
 export class CreativeDetailPage implements OnInit {
-    constructor() {}
+    creative: Creative
 
-    ngOnInit() {}
+    constructor(
+        private route: ActivatedRoute,
+        private navCtrl: NavController,
+        private creativesService: CreativesService
+    ) {}
+
+    ngOnInit() {
+        this.route.paramMap.subscribe(paramMap => {
+            if (!paramMap.has('creativeId')) {
+                this.navCtrl.navigateBack('/discover/tabs/creatives')
+                return
+            }
+            this.creative = this.creativesService.getCreative(paramMap.get('creativeId'))
+        })
+    }
 }
