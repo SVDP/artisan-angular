@@ -10,12 +10,12 @@ import { CreativeDetailPage } from './creative-detail.page'
 const routes: Routes = [
     {
         path: '',
-        component: CreativeDetailPage,
-    },
+        component: CreativeDetailPage
+    }
 ]
 
 @NgModule({
     imports: [CommonModule, FormsModule, IonicModule, RouterModule.forChild(routes)],
-    declarations: [CreativeDetailPage],
+    declarations: [CreativeDetailPage]
 })
 export class CreativeDetailPageModule {}

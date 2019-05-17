@@ -5,32 +5,32 @@ const routes: Routes = [
     {
         path: '',
         redirectTo: 'discover/tabs/shots',
-        pathMatch: 'full',
+        pathMatch: 'full'
     },
     {
         path: 'discover',
-        loadChildren: './discover/discover.module#DiscoverPageModule',
+        loadChildren: './discover/discover.module#DiscoverPageModule'
     },
     {
         path: 'match',
-        loadChildren: './match/match.module#MatchPageModule',
+        loadChildren: './match/match.module#MatchPageModule'
     },
     {
         path: 'create',
-        loadChildren: './create/create.module#CreatePageModule',
+        loadChildren: './create/create.module#CreatePageModule'
     },
     {
         path: 'profile',
-        loadChildren: './profile/profile.module#ProfilePageModule',
-    },
+        loadChildren: './profile/profile.module#ProfilePageModule'
+    }
 ]
 
 @NgModule({
     imports: [
         RouterModule.forRoot(routes, {
-            preloadingStrategy: PreloadAllModules,
-        }),
+            preloadingStrategy: PreloadAllModules
+        })
     ],
-    exports: [RouterModule],
+    exports: [RouterModule]
 })
 export class AppRoutingModule {}

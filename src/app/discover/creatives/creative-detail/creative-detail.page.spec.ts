@@ -10,7 +10,7 @@ describe('CreativeDetailPage', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [CreativeDetailPage],
-            schemas: [CUSTOM_ELEMENTS_SCHEMA],
+            schemas: [CUSTOM_ELEMENTS_SCHEMA]
         }).compileComponents()
     }))
 

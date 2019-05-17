@@ -13,43 +13,44 @@ const routes: Routes = [
                 children: [
                     {
                         path: '',
-                        loadChildren: './shots/shots.module#ShotsPageModule',
-                    },
-                ],
+                        loadChildren: './shots/shots.module#ShotsPageModule'
+                    }
+                ]
             },
             {
                 path: 'creatives',
                 children: [
                     {
                         path: '',
-                        loadChildren: './creatives/creatives.module#CreativesPageModule',
+                        loadChildren: './creatives/creatives.module#CreativesPageModule'
                     },
                     {
                         path: ':creativeId',
-                        loadChildren: './creatives/creative-detail/creative-detail.module#CreativeDetailPageModule',
-                    },
-                ],
+                        loadChildren:
+                            './creatives/creative-detail/creative-detail.module#CreativeDetailPageModule'
+                    }
+                ]
             },
             {
                 path: '',
                 redirectTo: 'discover/tabs/shots',
-                pathMatch: 'full',
-            },
-        ],
+                pathMatch: 'full'
+            }
+        ]
     },
     {
         path: '',
         redirectTo: 'discover/tabs/shots',
-        pathMatch: 'full',
+        pathMatch: 'full'
     },
     {
         path: 'creative-detail',
-        loadChildren: './creatives/creative-detail/creative-detail.module#CreativeDetailPageModule',
-    },
+        loadChildren: './creatives/creative-detail/creative-detail.module#CreativeDetailPageModule'
+    }
 ]
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
+    exports: [RouterModule]
 })
 export class DiscoverRoutingModule {}
