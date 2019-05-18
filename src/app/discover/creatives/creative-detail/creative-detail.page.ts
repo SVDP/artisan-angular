@@ -32,8 +32,15 @@ export class CreativeDetailPage implements OnInit {
     }
 
     openModalMessage() {
-        this.modalCtrl.create({ component: MessageModalComponent }).then(modalEl => {
-            modalEl.present()
-        })
+        this.modalCtrl
+            .create({
+                component: MessageModalComponent,
+                componentProps: {
+                    selectedCreative: this.creative
+                }
+            })
+            .then(modalEl => {
+                modalEl.present()
+            })
     }
 }

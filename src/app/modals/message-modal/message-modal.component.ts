@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
+import { ModalController } from '@ionic/angular'
+
+import { Creative } from '../../discover/creative.model'
 
 @Component({
     selector: 'app-message-modal',
@@ -6,7 +9,22 @@ import { Component, OnInit } from '@angular/core'
     styleUrls: ['./message-modal.component.scss']
 })
 export class MessageModalComponent implements OnInit {
-    constructor() {}
+    @Input() selectedCreative: Creative
+
+    constructor(private modalCtrl: ModalController) {}
 
     ngOnInit() {}
+
+    onCancel() {
+        this.modalCtrl.dismiss(null, 'cancel')
+    }
+
+    onSendMessage() {
+        this.modalCtrl.dismiss(
+            {
+                message: 'This is a dummy message!'
+            },
+            'confirm'
+        )
+    }
 }

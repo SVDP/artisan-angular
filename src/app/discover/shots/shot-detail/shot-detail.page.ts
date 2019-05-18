@@ -32,8 +32,15 @@ export class ShotDetailPage implements OnInit {
     }
 
     openModalComment() {
-        this.modalCtrl.create({ component: CommentModalComponent }).then(modalEl => {
-            modalEl.present()
-        })
+        this.modalCtrl
+            .create({
+                component: CommentModalComponent,
+                componentProps: {
+                    selectedShot: this.shot
+                }
+            })
+            .then(modalEl => {
+                modalEl.present()
+            })
     }
 }

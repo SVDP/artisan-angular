@@ -1,9 +1,16 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>Message Section</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button (click)="onCancel()">
+                <ion-icon name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
     </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-    <h1>Send message!</h1>
+    <h1>Send message to {{ selectedCreative.name }}</h1>
+    <p>{{ selectedCreative.description }}</p>
+    <ion-button (click)="onSendMessage()">Send</ion-button>
 </ion-content>

@@ -1,9 +1,16 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>Comment Section</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button (click)="onCancel()">
+                <ion-icon name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
     </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-    <h1>Give comment!</h1>
+    <h1>Give comment on {{ selectedShot.name }}</h1>
+    <p>{{ selectedShot.tags }}</p>
+    <ion-button (click)="onSendComment()">Comment</ion-button>
 </ion-content>
