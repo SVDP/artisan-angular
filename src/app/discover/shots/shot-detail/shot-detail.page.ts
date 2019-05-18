@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
-import { NavController } from '@ionic/angular'
+import { NavController, ModalController } from '@ionic/angular'
 
 import { Shot } from '../../shot.model'
 import { ShotsService } from '../../shots.service'
+import { CommentModalComponent } from '../../../modals/comment-modal/comment-modal.component'
 
 @Component({
     selector: 'app-shot-detail',
@@ -16,7 +17,8 @@ export class ShotDetailPage implements OnInit {
     constructor(
         private route: ActivatedRoute,
         private navCtrl: NavController,
-        private shotsService: ShotsService
+        private shotsService: ShotsService,
+        private modalCtrl: ModalController
     ) {}
 
     ngOnInit() {
@@ -26,6 +28,12 @@ export class ShotDetailPage implements OnInit {
                 return
             }
             this.shot = this.shotsService.getShot(paramMap.get('shotId'))
+        })
+    }
+
+    openModalComment() {
+        this.modalCtrl.create({ component: CommentModalComponent }).then(modalEl => {
+            modalEl.present()
         })
     }
 }

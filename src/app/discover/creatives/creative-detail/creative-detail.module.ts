@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router'
 import { IonicModule } from '@ionic/angular'
 
 import { CreativeDetailPage } from './creative-detail.page'
+import { MessageModalComponent } from '../../../modals/message-modal/message-modal.component'
 
 const routes: Routes = [
     {
@@ -16,6 +17,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [CommonModule, FormsModule, IonicModule, RouterModule.forChild(routes)],
-    declarations: [CreativeDetailPage]
+    declarations: [CreativeDetailPage, MessageModalComponent],
+    entryComponents: [MessageModalComponent]
 })
 export class CreativeDetailPageModule {}

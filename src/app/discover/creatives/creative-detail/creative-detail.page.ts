@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
-import { NavController } from '@ionic/angular'
+import { NavController, ModalController } from '@ionic/angular'
 
 import { Creative } from '../../creative.model'
 import { CreativesService } from '../../creatives.service'
+import { MessageModalComponent } from '../../../modals/message-modal/message-modal.component'
 
 @Component({
     selector: 'app-creative-detail',
@@ -16,7 +17,8 @@ export class CreativeDetailPage implements OnInit {
     constructor(
         private route: ActivatedRoute,
         private navCtrl: NavController,
-        private creativesService: CreativesService
+        private creativesService: CreativesService,
+        private modalCtrl: ModalController
     ) {}
 
     ngOnInit() {
@@ -26,6 +28,12 @@ export class CreativeDetailPage implements OnInit {
                 return
             }
             this.creative = this.creativesService.getCreative(paramMap.get('creativeId'))
+        })
+    }
+
+    openModalMessage() {
+        this.modalCtrl.create({ component: MessageModalComponent }).then(modalEl => {
+            modalEl.present()
         })
     }
 }

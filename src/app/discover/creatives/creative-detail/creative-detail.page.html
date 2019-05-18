@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Creative-detail</ion-title>
+        <ion-title>Creative Profile</ion-title>
         <ion-buttons slot="start">
             <ion-back-button defaultHref="/discover/tabs/creatives"></ion-back-button>
         </ion-buttons>
@@ -12,8 +12,7 @@
         <ion-row>
             <ion-col>
                 <h1>{{ creative.name }}</h1>
-                <p></p>
-                <img src="" alt="" />
+                <ion-button (click)="openModalMessage()">Contact creative</ion-button>
             </ion-col>
         </ion-row>
     </ion-grid>

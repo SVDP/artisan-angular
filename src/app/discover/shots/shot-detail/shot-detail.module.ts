@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router'
 import { IonicModule } from '@ionic/angular'
 
 import { ShotDetailPage } from './shot-detail.page'
+import { CommentModalComponent } from '../../../modals/comment-modal/comment-modal.component'
 
 const routes: Routes = [
     {
@@ -16,6 +17,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [CommonModule, FormsModule, IonicModule, RouterModule.forChild(routes)],
-    declarations: [ShotDetailPage]
+    declarations: [ShotDetailPage, CommentModalComponent],
+    entryComponents: [CommentModalComponent]
 })
 export class ShotDetailPageModule {}
