@@ -18,6 +18,29 @@
     <ion-grid>
         <ion-row>
             <ion-col>
+                <ion-searchbar color="base" placeholder="Search artisan by..."></ion-searchbar>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <h2>Today's <strong>recommended</strong> projects</h2>
+                <ion-slides [options]="sliderConfig">
+                    <ion-slide *ngFor="let shot of loadedShots">
+                        <ion-card [routerLink]="['/', 'discover', 'tabs', 'shots', shot.id]">
+                            <ion-img [src]="shot.shotUrl"></ion-img>
+                        </ion-card>
+                    </ion-slide>
+                </ion-slides>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <h2><strong>Creative</strong> fields</h2>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <h2>Project's from <strong>creatives you follow</strong></h2>
                 <ion-list>
                     <ion-item *ngFor="let shot of loadedShots">
                         <ion-card>

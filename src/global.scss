@@ -16,6 +16,33 @@
     letter-spacing: 0.02em;
 }
 
+html {
+    --ion-safe-area-top: 0;
+    --ion-safe-area-bottom: 0;
+    --ion-safe-area-left: 0;
+    --ion-safe-area-right: 0;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 34px 0 0 16px;
+
+    strong {
+        font-weight: 900;
+    }
+}
+
+ion-grid {
+    padding: 0 !important;
+    width: 100% !important;
+
+    ion-row,
+    ion-col {
+        padding: inherit;
+        width: inherit;
+    }
+}
+
 ion-toolbar {
     display: flex;
     height: 100px;
@@ -45,7 +72,7 @@ ion-tab-bar {
             position: relative;
 
             &:before {
-                background-color: var(--ion-color-medium);
+                background-color: var(--ion-color-primary);
                 border-radius: 12px;
                 content: '';
                 height: 6px;
@@ -75,7 +102,7 @@ ion-tab-bar {
             }
 
             &:before {
-                background: var(--ion-color-secondary);
+                background-color: var(--ion-color-secondary);
                 border-radius: 17px;
                 color: #fff;
                 content: '2';
@@ -90,10 +117,10 @@ ion-tab-bar {
         }
 
         .nav-icon {
-            height: 24px;
+            height: 20px;
             margin: 16px auto;
             transition: background 0.4s;
-            width: 24px;
+            width: 20px;
 
             &:nth-child(2) {
                 background-image: url('assets/img/icons/nav/discover-grey.svg');
@@ -184,4 +211,18 @@ ion-back-button {
     background-position: center center;
     margin-left: 6px;
     width: 20px;
+}
+
+.searchbar-input-container {
+    height: 52px !important;
+
+    .searchbar-input {
+        border: 1px solid var(--ion-color-medium);
+        color: var(--ion-color-primary);
+        height: inherit;
+
+        input {
+            height: inherit;
+        }
+    }
 }

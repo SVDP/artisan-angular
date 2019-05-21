@@ -12,7 +12,7 @@ export class ShotsService {
             'Columbico Bird Food',
             'branding',
             'This is a tag',
-            'https://mir-s3-cdn-cf.behance.net/projects/404/521fb580054395.Y3JvcCwyODc3LDIyNTEsNTYyLDA.png',
+            'https://mir-s3-cdn-cf.behance.net/projects/404/d9a33d77819747.Y3JvcCwxMjUzLDk4MCwyMjYsMA.png',
             'c1'
         ),
         new Shot(
@@ -20,8 +20,24 @@ export class ShotsService {
             'Random shot',
             'motion',
             'This is a tag',
-            'https://mir-s3-cdn-cf.behance.net/projects/404/97720079403215.Y3JvcCw4MDgsNjMyLDAsMA.png',
+            'https://mir-s3-cdn-cf.behance.net/projects/max_808/ed9c7377439259.Y3JvcCw4MDgsNjMyLDAsMA.png',
             'c2'
+        ),
+        new Shot(
+            's3',
+            'Random shot',
+            'motion',
+            'This is a tag',
+            'https://mir-s3-cdn-cf.behance.net/projects/404/a323f378619769.Y3JvcCwxNjA1LDEyNTYsMTUsMA.png',
+            'c3'
+        ),
+        new Shot(
+            's3',
+            'Random shot',
+            'motion',
+            'This is a tag',
+            'https://mir-s3-cdn-cf.behance.net/projects/404/875ad769275059.Y3JvcCwxNjA1LDEyNTYsMTUsMA.png',
+            'c3'
         )
     ]
 

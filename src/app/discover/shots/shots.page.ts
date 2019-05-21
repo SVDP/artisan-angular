@@ -9,6 +9,18 @@ import { Shot } from '../shot.model'
     styleUrls: ['./shots.page.scss']
 })
 export class ShotsPage implements OnInit {
+    sliderConfig = {
+        slidesPerView: 1.2,
+        spaceBetween: -16,
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true
+        }
+    }
+
     loadedShots: Shot[]
 
     constructor(private shotsService: ShotsService) {}
