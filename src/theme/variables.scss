@@ -3,6 +3,13 @@
 
 /** Ionic CSS Variables **/
 :root {
+    --ion-color-base: #ffffff;
+    --ion-color-base-rgb: 255, 255, 255;
+    --ion-color-base-contrast: #1c1c1c;
+    --ion-color-base-contrast-rgb: 28, 28, 28;
+    --ion-color-base-shade: #fafafa;
+    --ion-color-base-tint: #cccccc;
+
     --ion-color-primary: #1c1c1c;
     --ion-color-primary-rgb: 28, 28, 28;
     --ion-color-primary-contrast: #ffffff;
@@ -66,6 +73,7 @@
     --ion-color-light-shade: #dbdbdb;
     --ion-color-light-tint: #fafafa;
 
-    --ion-toolbar-background: #ffffff;
-    --ion-toolbar-border-color: var(--ion-color-light);
+    --ion-toolbar-background: var(--ion-color-base);
+    --ion-toolbar-border-color: var(--ion-color-base);
+    --ion-tab-bar-border-color: var(--ion-color-base);
 }
