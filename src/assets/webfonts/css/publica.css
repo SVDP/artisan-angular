@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'PublicaSans-Medium';
+    src: url('../files/39199D_A_0.eot');
+    src: url('../files/39199D_A_0.eot?#iefix') format('embedded-opentype'),
+        url('../files/39199D_A_0.woff2') format('woff2'),
+        url('../files/39199D_A_0.woff') format('woff'),
+        url('../files/39199D_A_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PublicaSans-Regular';
+    src: url('../files/39199D_C_0.eot');
+    src: url('../files/39199D_C_0.eot?#iefix') format('embedded-opentype'),
+        url('../files/39199D_C_0.woff2') format('woff2'),
+        url('../files/39199D_C_0.woff') format('woff'),
+        url('../files/39199D_C_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PublicaSans-Light';
+    src: url('../files/39199D_8_0.eot');
+    src: url('../files/39199D_8_0.eot?#iefix') format('embedded-opentype'),
+        url('../files/39199D_8_0.woff2') format('woff2'),
+        url('../files/39199D_8_0.woff') format('woff'),
+        url('../files/39199D_8_0.ttf') format('truetype');
+}

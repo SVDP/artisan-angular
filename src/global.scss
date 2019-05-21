@@ -9,3 +9,140 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+@import 'assets/webfonts/css/publica.css';
+
+* {
+    font-family: 'PublicaSans-Light', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+ion-toolbar {
+    display: flex;
+    height: 100px;
+    padding: 0 25px;
+}
+
+ion-title {
+    color: var(--ion-color-medium);
+    text-align: right;
+
+    &.ios {
+        margin-left: 28px;
+        width: 100vw;
+    }
+}
+
+#menu {
+    text-align: center;
+    --width: 80px;
+
+    ion-menu-toggle {
+        display: flex;
+        flex-direction: column;
+
+        ion-avatar {
+            margin: 26px auto 46px auto;
+            position: relative;
+
+            &:before {
+                background: var(--ion-color-secondary);
+                border-radius: 17px;
+                color: #fff;
+                content: '2';
+                font-size: 11px;
+                padding-top: 3px;
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                width: 17px;
+                z-index: 100;
+            }
+        }
+
+        .nav-icon {
+            height: 24px;
+            margin: 16px auto;
+            transition: background 0.4s;
+            width: 24px;
+
+            &:nth-child(2) {
+                background-image: url('assets/img/icons/nav/discover-grey.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &:nth-child(3) {
+                background-image: url('assets/img/icons/nav/match-grey.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &:nth-child(4) {
+                background-image: url('assets/img/icons/nav/create-grey.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                &:active {
+                    background-image: url('assets/img/icons/nav/create-black.svg');
+                }
+            }
+
+            &:last-child {
+                background-image: url('assets/img/icons/nav/toggle-ui-grey.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                &:active {
+                    background-image: url('assets/img/icons/nav/toggle-ui-black.svg');
+                }
+            }
+
+            &:hover {
+                outline: none;
+            }
+        }
+
+        hr {
+            background-color: var(--ion-color-medium);
+            height: 1px;
+            margin: 16px auto;
+            width: 44px;
+        }
+    }
+}
+
+#menu-button {
+    display: flex;
+    flex-direction: column;
+    height: 11px;
+    width: 22px;
+
+    span {
+        background-color: var(--ion-color-primary);
+        border-radius: 20%;
+        height: 2px;
+        transition: width 0.4s;
+        width: 100%;
+
+        &:last-child {
+            margin-top: 7px;
+            width: 70%;
+        }
+    }
+
+    &:hover {
+        span {
+            &:first-child {
+                width: 70%;
+            }
+
+            &:last-child {
+                width: 100%;
+            }
+        }
+    }
+}
