@@ -307,3 +307,20 @@ ion-card {
         }
     }
 }
+
+.cardStats {
+    display: flex;
+    flex-direction: row;
+    margin: -10px 0 20px 0;
+
+    img {
+        height: 13px;
+    }
+
+    ion-label {
+        color: var(--ion-color-dark);
+        font-size: 12px;
+        font-weight: 900;
+        margin: 0 20px 0 10px;
+    }
+}

@@ -12,7 +12,7 @@ export class CreativesService {
             'Milica Tucakovic',
             'Student of Faculty of Fine Arts',
             ['branding', 'graphic design', 'illustration'],
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+            './assets/img/creatives/c1.jpg',
             ['project1', 'project2', 'project3']
         ),
         new Creative(
@@ -20,7 +20,7 @@ export class CreativesService {
             'Random name',
             'Description of the user',
             ['motion', 'photography'],
-            'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80',
+            './assets/img/creatives/c2.jpg',
             ['project1', 'project2', 'project3', 'project4', 'project5']
         )
     ]

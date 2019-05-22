@@ -18,20 +18,23 @@
     <ion-grid>
         <ion-row>
             <ion-col>
+                <ion-searchbar color="base" placeholder="Search artisan by..."></ion-searchbar>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <h2 class="paddingHorizontal"><strong>Creatives</strong> you follow</h2>
                 <ion-list>
-                    <ion-item *ngFor="let creative of loadedCreatives">
-                        <ion-card>
+                    <ion-item *ngFor="let creative of loadedCreatives" lines="none">
+                        <ion-card
+                            [routerLink]="['/', 'discover', 'tabs', 'creatives', creative.id]"
+                        >
                             <ion-img [src]="creative.profileUrl"></ion-img>
                             <ion-card-header>
                                 <ion-card-title>{{ creative.name }}</ion-card-title>
                             </ion-card-header>
-                            <ion-card-content>
-                                <p>{{ creative.description }}</p>
-                                <ion-button
-                                    [routerLink]="['/', 'discover', 'tabs', 'creatives', creative.id]"
-                                >
-                                    View
-                                </ion-button>
+                            <ion-card-content class="negativeTop">
+                                <p><strong>{{ creative.description }}</strong></p>
                             </ion-card-content>
                         </ion-card>
                     </ion-item>
