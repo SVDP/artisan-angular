@@ -3,8 +3,8 @@ export class Creative {
         public id: string,
         public name: string,
         public description: string,
-        public fields: string,
+        public fields: string[] = [],
         public profileUrl: string,
-        public projectIds: string
+        public projects: string[] = []
     ) {}
 }

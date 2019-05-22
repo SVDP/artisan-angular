@@ -7,12 +7,59 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
     <ion-grid>
-        <ion-row>
+        <ion-row class="paddingHorizontal">
             <ion-col>
                 <h1>{{ shot.name }}</h1>
-                <ion-button (click)="openModalComment()">Give comment</ion-button>
+                <p style="margin-top: -6px;">
+                    by
+                    <strong [routerLink]="['/', 'discover', 'tabs', 'creatives', shot.ownerId]"
+                        >{{ shot.ownerName }}</strong
+                    >
+                </p>
+            </ion-col>
+        </ion-row>
+        <ion-row class="paddingHorizontal">
+            <ion-col>
+                <ion-button class="follow-button">
+                    Follow
+                </ion-button>
+                <ion-button class="like-button" color="secondary">
+                    <img src="./assets/img/icons/misc/like-white.svg" alt="Like" />
+                </ion-button>
+                <img
+                    (click)="openModalComment()"
+                    class="options-button"
+                    src="./assets/img/icons/misc/options.svg"
+                    alt="Options"
+                />
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-img class="detail-img" [src]="shot.shotUrl"></ion-img>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row class="negativeTop paddingHorizontal">
+            <ion-col>
+                <h2><strong>Creative</strong> fields</h2>
+                <ion-button class="tag-button" size="small">{{ shot.field1 }}</ion-button>
+                <ion-button class="tag-button" size="small">{{ shot.field2 }}</ion-button>
+                <ion-button class="tag-button" size="small">{{ shot.field3 }}</ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row class="paddingHorizontal">
+            <ion-col>
+                <h2><strong>Tags</strong></h2>
+                <ion-button class="tag-button" size="small">{{ shot.tag1 }}</ion-button>
+                <ion-button class="tag-button" size="small">{{ shot.tag2 }}</ion-button>
+                <ion-button class="tag-button" size="small">{{ shot.tag3 }}</ion-button>
+                <ion-button class="tag-button" size="small">{{ shot.tag4 }}</ion-button>
+                <ion-button class="tag-button" size="small">{{ shot.tag5 }}</ion-button>
+                <ion-button class="tag-button" size="small">{{ shot.tag6 }}</ion-button>
             </ion-col>
         </ion-row>
     </ion-grid>

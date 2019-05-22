@@ -23,7 +23,7 @@
         </ion-row>
         <ion-row>
             <ion-col>
-                <h2>Today's <strong>recommended</strong> projects</h2>
+                <h2 class="paddingHorizontal">Today's <strong>recommended</strong> projects</h2>
                 <ion-slides [options]="sliderConfig">
                     <ion-slide *ngFor="let shot of loadedShots">
                         <ion-card [routerLink]="['/', 'discover', 'tabs', 'shots', shot.id]">
@@ -33,28 +33,85 @@
                 </ion-slides>
             </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row class="negativeTop">
             <ion-col>
-                <h2><strong>Creative</strong> fields</h2>
+                <h2 class="paddingHorizontal"><strong>Creative</strong> fields</h2>
+                <ion-row padding>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img src="./assets/img/icons/fields/branding.svg" alt="Branding" />
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img
+                                src="./assets/img/icons/fields/graphic-design.svg"
+                                alt="Graphic design"
+                            />
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img
+                                src="./assets/img/icons/fields/illustration.svg"
+                                alt="Illustration"
+                            />
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img
+                                class="motion"
+                                src="./assets/img/icons/fields/motion.svg"
+                                alt="Motion"
+                            />
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="negativeTop" padding>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img
+                                src="./assets/img/icons/fields/photography.svg"
+                                alt="Photography"
+                            />
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img src="./assets/img/icons/fields/typography.svg" alt="Typography" />
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img
+                                src="./assets/img/icons/fields/ux-ui-design.svg"
+                                alt="UX / UI Design"
+                            />
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button class="field-button" color="base">
+                            <img src="./assets/img/icons/fields/web-design.svg" alt="Web Design" />
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col>
-                <h2>Project's from <strong>creatives you follow</strong></h2>
+                <h2 class="paddingHorizontal">
+                    Project's from <strong>creatives you follow</strong>
+                </h2>
                 <ion-list>
-                    <ion-item *ngFor="let shot of loadedShots">
-                        <ion-card>
+                    <ion-item *ngFor="let shot of loadedShots" lines="none">
+                        <ion-card [routerLink]="['/', 'discover', 'tabs', 'shots', shot.id]">
                             <ion-img [src]="shot.shotUrl"></ion-img>
                             <ion-card-header>
                                 <ion-card-title>{{ shot.name }}</ion-card-title>
                             </ion-card-header>
-                            <ion-card-content>
-                                <p>{{ shot.tags }}</p>
-                                <ion-button
-                                    [routerLink]="['/', 'discover', 'tabs', 'shots', shot.id]"
-                                >
-                                    View
-                                </ion-button>
+                            <ion-card-content class="negativeTop">
+                                <p>by <strong>{{ shot.ownerName }}</strong></p>
                             </ion-card-content>
                         </ion-card>
                     </ion-item>
