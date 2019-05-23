@@ -11,17 +11,29 @@ export class CreativesService {
             'c1',
             'Milica Tucakovic',
             'Student of Faculty of Fine Arts',
-            ['branding', 'graphic design', 'illustration'],
+            '',
+            '',
+            '',
             './assets/img/creatives/c1.jpg',
-            ['project1', 'project2', 'project3']
+            'https://mir-s3-cdn-cf.behance.net/projects/404/d9a33d77819747.Y3JvcCwxMjUzLDk4MCwyMjYsMA.png',
+            'https://mir-s3-cdn-cf.behance.net/projects/404/d9a33d77819747.Y3JvcCwxMjUzLDk4MCwyMjYsMA.png',
+            'https://mir-s3-cdn-cf.behance.net/projects/404/d9a33d77819747.Y3JvcCwxMjUzLDk4MCwyMjYsMA.png',
+            'https://mir-s3-cdn-cf.behance.net/projects/404/d9a33d77819747.Y3JvcCwxMjUzLDk4MCwyMjYsMA.png',
+            'https://mir-s3-cdn-cf.behance.net/projects/404/d9a33d77819747.Y3JvcCwxMjUzLDk4MCwyMjYsMA.png'
         ),
         new Creative(
             'c2',
             'Random name',
             'Description of the user',
-            ['motion', 'photography'],
+            '',
+            '',
+            '',
             './assets/img/creatives/c2.jpg',
-            ['project1', 'project2', 'project3', 'project4', 'project5']
+            '',
+            '',
+            '',
+            '',
+            ''
         )
     ]
 

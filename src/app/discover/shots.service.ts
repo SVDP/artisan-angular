@@ -9,7 +9,7 @@ export class ShotsService {
     private _shots: Shot[] = [
         new Shot(
             's1',
-            'Columbico Bird Food',
+            'Columbico Bird Food - branding & packaging',
             'Branding',
             'Graphic Design',
             'Illustration',

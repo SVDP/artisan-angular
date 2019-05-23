@@ -9,8 +9,13 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-    <h1>Give comment on {{ selectedShot.name }}</h1>
-    <p>{{ selectedShot.tags }}</p>
-    <ion-button (click)="onSendComment()">Comment</ion-button>
+<ion-content>
+    <ion-grid>
+        <ion-row class="paddingHorizontal">
+            <ion-col>
+                <ion-textarea placeholder="Comment on {{ selectedShot.name }}"></ion-textarea>
+                <ion-button (click)="onSendComment()" class="submit-button">Comment</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

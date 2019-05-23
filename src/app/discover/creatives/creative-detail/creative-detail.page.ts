@@ -37,7 +37,8 @@ export class CreativeDetailPage implements OnInit {
                 component: MessageModalComponent,
                 componentProps: {
                     selectedCreative: this.creative
-                }
+                },
+                cssClass: 'modal'
             })
             .then(modalEl => {
                 modalEl.present()

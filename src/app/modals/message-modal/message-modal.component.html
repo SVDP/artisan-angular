@@ -9,8 +9,15 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-    <h1>Send message to {{ selectedCreative.name }}</h1>
-    <p>{{ selectedCreative.description }}</p>
-    <ion-button (click)="onSendMessage()">Send</ion-button>
+<ion-content>
+    <ion-grid>
+        <ion-row class="paddingHorizontal">
+            <ion-col>
+                <ion-textarea
+                    placeholder="Send a message to {{ selectedCreative.name }}"
+                ></ion-textarea>
+                <ion-button (click)="onSendMessage()" class="submit-button">Send</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

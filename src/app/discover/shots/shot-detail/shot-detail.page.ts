@@ -37,7 +37,8 @@ export class ShotDetailPage implements OnInit {
                 component: CommentModalComponent,
                 componentProps: {
                     selectedShot: this.shot
-                }
+                },
+                cssClass: 'modal'
             })
             .then(modalEl => {
                 modalEl.present()
