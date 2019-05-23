@@ -12,7 +12,7 @@
 @import 'assets/webfonts/css/publica.css';
 
 * {
-    font-family: 'PublicaSans-Light', sans-serif;
+    font-family: 'PublicaSans-Light', sans-serif !important;
     letter-spacing: 0.02em;
 }
 
@@ -48,6 +48,10 @@ p {
 
 .paddingHorizontal {
     padding: 0 18px;
+}
+
+.paddingVertical {
+    padding: 18px 0;
 }
 
 ion-grid {
