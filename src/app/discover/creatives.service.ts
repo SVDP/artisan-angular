@@ -16,7 +16,12 @@ export class CreativesService {
             './assets/img/shots/s2.jpg',
             './assets/img/shots/s3.jpg',
             './assets/img/shots/s4.jpg',
-            './assets/img/shots/s5.jpg'
+            './assets/img/shots/s5.jpg',
+            's1',
+            's2',
+            's3',
+            's4',
+            's5'
         ),
         new Creative(
             'c2',
@@ -27,7 +32,12 @@ export class CreativesService {
             './assets/img/shots/s7.jpg',
             './assets/img/shots/s8.jpg',
             './assets/img/shots/s9.jpg',
-            './assets/img/shots/s10.jpg'
+            './assets/img/shots/s10.jpg',
+            's6',
+            's7',
+            's8',
+            's9',
+            's10'
         ),
         new Creative(
             'c3',
@@ -38,7 +48,12 @@ export class CreativesService {
             './assets/img/shots/s12.jpg',
             './assets/img/shots/s13.jpg',
             './assets/img/shots/s14.jpg',
-            './assets/img/shots/s15.jpg'
+            './assets/img/shots/s15.jpg',
+            's11',
+            's12',
+            's13',
+            's14',
+            's15'
         ),
         new Creative(
             'c4',
@@ -49,7 +64,12 @@ export class CreativesService {
             './assets/img/shots/s17.jpg',
             './assets/img/shots/s18.jpg',
             './assets/img/shots/s19.jpg',
-            './assets/img/shots/s20.jpg'
+            './assets/img/shots/s20.jpg',
+            's16',
+            's17',
+            's18',
+            's19',
+            's20'
         ),
         new Creative(
             'c5',
@@ -60,7 +80,12 @@ export class CreativesService {
             './assets/img/shots/s22.jpg',
             './assets/img/shots/s23.jpg',
             './assets/img/shots/s24.jpg',
-            './assets/img/shots/s25.jpg'
+            './assets/img/shots/s25.jpg',
+            's21',
+            's22',
+            's23',
+            's24',
+            's25'
         ),
         new Creative(
             'c6',
@@ -71,7 +96,12 @@ export class CreativesService {
             './assets/img/shots/s27.jpg',
             './assets/img/shots/s28.jpg',
             './assets/img/shots/s29.jpg',
-            './assets/img/shots/s30.jpg'
+            './assets/img/shots/s30.jpg',
+            's26',
+            's27',
+            's28',
+            's29',
+            's30'
         )
     ]
 
