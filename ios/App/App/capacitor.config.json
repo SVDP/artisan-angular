@@ -1,0 +1,7 @@
+{
+    "appId": "com.artisan.app",
+    "appName": "artisan-angular",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "www"
+}

@@ -78,6 +78,10 @@ ion-toolbar {
     height: 100px;
     padding: 0 25px;
 
+    &.ios {
+        height: 140px;
+    }
+
     ion-title {
         color: var(--ion-color-medium);
         text-align: right;
@@ -124,7 +128,7 @@ ion-tab-bar {
         flex-direction: column;
 
         ion-avatar {
-            margin: 26px auto 46px auto;
+            margin: 42px auto 46px auto;
             position: relative;
 
             &:hover {

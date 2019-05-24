@@ -1,5 +1,7 @@
 {
-    "name": "artisan-angular",
-    "integrations": {},
-    "type": "angular"
+  "name": "artisan-angular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
 }
