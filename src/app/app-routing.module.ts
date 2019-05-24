@@ -16,12 +16,12 @@ const routes: Routes = [
         loadChildren: './match/match.module#MatchPageModule'
     },
     {
-        path: 'create',
-        loadChildren: './create/create.module#CreatePageModule'
-    },
-    {
         path: 'profile',
         loadChildren: './profile/profile.module#ProfilePageModule'
+    },
+    {
+        path: 'edit-profile',
+        loadChildren: './profile/edit-profile/edit-profile.module#EditProfilePageModule'
     }
 ]
 

@@ -5,17 +5,17 @@ import { Routes, RouterModule } from '@angular/router'
 
 import { IonicModule } from '@ionic/angular'
 
-import { CreatePage } from './create.page'
+import { EditProfilePage } from './edit-profile.page'
 
 const routes: Routes = [
     {
         path: '',
-        component: CreatePage
+        component: EditProfilePage
     }
 ]
 
 @NgModule({
     imports: [CommonModule, FormsModule, IonicModule, RouterModule.forChild(routes)],
-    declarations: [CreatePage]
+    declarations: [EditProfilePage]
 })
-export class CreatePageModule {}
+export class EditProfilePageModule {}
