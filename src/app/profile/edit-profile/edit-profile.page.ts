@@ -9,4 +9,6 @@ export class EditProfilePage implements OnInit {
     constructor() {}
 
     ngOnInit() {}
+
+    onImagePicked(imageData: string) {}
 }

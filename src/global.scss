@@ -43,7 +43,13 @@ p {
 }
 
 .negativeTop {
-    margin-top: -26px;
+    &.ios {
+        margin-top: -26px;
+    }
+
+    &.md {
+        margin-top: -12px;
+    }
 }
 
 .paddingHorizontal {
@@ -342,7 +348,7 @@ ion-card {
 .cardStats {
     display: flex;
     flex-direction: row;
-    margin: -10px 0 20px 0;
+    margin-bottom: 20px;
 
     img {
         height: 13px;
@@ -356,9 +362,21 @@ ion-card {
     }
 }
 
+.ios {
+    .cardStats {
+        margin-top: -10px;
+    }
+}
+
 .modal .modal-wrapper {
     height: 50%;
     top: 50%;
     position: absolute;
     display: block;
+}
+
+.md {
+    ion-checkbox {
+        margin-right: 11px;
+    }
 }

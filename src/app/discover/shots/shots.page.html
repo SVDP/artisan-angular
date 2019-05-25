@@ -25,7 +25,7 @@
             <ion-col>
                 <h2 class="paddingHorizontal">Today's <strong>recommended</strong> projects</h2>
                 <ion-slides [options]="sliderConfig">
-                    <ion-slide *ngFor="let shot of loadedShots">
+                    <ion-slide *ngFor="let shot of loadedShots | slice:0:6">
                         <ion-card [routerLink]="['/', 'discover', 'tabs', 'shots', shot.id]">
                             <ion-img [src]="shot.shotUrl"></ion-img>
                         </ion-card>
