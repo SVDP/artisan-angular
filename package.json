@@ -12,7 +12,9 @@
         "e2e": "ng e2e",
         "prettier:base": "prettier \"./{e2e,src}/**/*.{scss,ts}\"",
         "prettier:list": "npm run prettier:base -- --list-different",
-        "prettier:write": "npm run prettier:base -- --write"
+        "prettier:write": "npm run prettier:base -- --write",
+        "ionic:build": "ionic-app-scripts build",
+        "ionic:serve": "ionic-app-scripts serve"
     },
     "private": true,
     "dependencies": {
